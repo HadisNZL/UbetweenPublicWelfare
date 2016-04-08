@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ubetween.ubetweenpublicwelfare.view.GuideViewPager
+        android:id="@+id/viewpager_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/start_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/guide_start_state"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/guide_start_tv"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

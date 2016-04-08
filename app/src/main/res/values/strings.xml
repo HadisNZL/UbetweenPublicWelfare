@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">之间公益</string>
+    <string name="action_settings">Settings</string>
+    <!--guide页开始文字-->
+    <string name="guide_start_tv">Come in</string>
+    <string name="exit_tips">再按一次退出程序</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--SlapshActivity主题-->
+    <style name="AppTheme.Splash" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <!--Activity主题 通用-->
+    <style name="AppTheme.Common" parent="AppTheme.Splash">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <!--退出对话框 主题-->
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+</resources>

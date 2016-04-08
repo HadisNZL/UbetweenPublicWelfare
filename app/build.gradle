@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+//    signingConfigs {
+//        release {
+//            keyAlias 'hadis'
+//            keyPassword '123456'
+//            storeFile file('/Users/hadis/appkey/UbetweenPublicWelfare.jks')
+//            storePassword '123456'
+//        }
+//    }
+    defaultConfig {
+        applicationId "com.ubetween.ubetweenpublicwelfare"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            //指定签名为release（发布）
+//          signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'org.xutils:xutils:3.3.26'
+}

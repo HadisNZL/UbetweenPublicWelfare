@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  <item android:state_selected="true">
+          <shape>
+              <gradient android:angle="90" android:endColor="#555555" android:startColor="#A573A8" />
+              <size android:width="320dp" android:height="40dp" />
+              <corners android:radius="8dp" />
+          </shape>
+      </item> -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#966C9C" />
+            <!--  <gradient android:angle="90" android:endColor="#99BD4C" android:startColor="#AD77B1" /> -->
+            <stroke android:width="1dp" android:color="#966C9C" />
+            <!-- <size android:width="320dp" android:height="40dp" /> -->
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+    <item>
+        <!--这是无按压时的状态；如果angle是0 startColor代表左边 endColor代表右边 ；如果angle是90 startColor代表下边 endColor代表上边-->
+        <shape>
+            <!-- 设置背景填充色  不能和gradient同时用-->
+            <solid android:color="#00000000" />
+            <!--渐变颜色  angle 0从左到右，90从上到下 数值为45的整数倍默认为0 -->
+            <!--  <gradient android:angle="0" android:endColor="#00F7FF" android:startColor="#A5C261" /> -->
+            <!--描边-->
+            <stroke android:width="1dp" android:color="#966C9C" />
+            <!--  <size android:width="320dp" android:height="40dp" />  -->
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+</selector>
